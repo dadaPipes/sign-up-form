@@ -7,53 +7,57 @@
     <title>Document</title>
 </head>
 <body>
-  <section class="academy">
+  <div class="academy">
       <img class="academy__image" src="images/universe-double.png" alt="universe in blue colors full of stars">
       <div class="academy__field">
         <img class="academy__logo" src="images/dalek-logo.jpg" alt="round logo of a Darlek">
         <p class="academy__text">Dalek <br> Web <br> Academy</p>
       </div>
-  </section>
-    <section class="description">
-      <p class="description__text">Exterminate the limits of your potential! Enroll now at Dalek Web Academy and upgrade your programming skills. 
-        Resistance is pointless. Join the ranks of the tech elite and conquer the digital realm. 
-        <br><br> You <em>know</em> you want to.</p>
+    </div>
+    <div class="right-container">
+      <section class="description">
+        <p class="description__text">Exterminate the limits of your potential. Enroll now at Dalek Web Academy and upgrade your programming skills. 
+          Resistance is pointless. Join the ranks of the tech elite and conquer the digital realm. 
+          <br><br> You <em>know</em> you want to.</p>
+      </section>
+      <section class="sign-up">
+        <h3 class="sign-up__call-to-action">Let the extermination begin!</h3>
+        <form class="form">
+            <div class="form__column--left">
+                <p class="form__item">
+                    <label for="firstName">FIRST NAME</label>
+                    <input class="form__input" type="text" name="FirstName" id="firstName">
+                </p>
+                <p class="form__item">
+                    <label for="email">EMAIL</label>
+                    <input class="form__input" type="email" name="Email" id="email">
+                </p>
+                <p class="form__item">
+                    <label for="password">PASSWORD</label>
+                    <input class="form__input" type="password" name="Password" id="password">
+                </p>
+            </div>
+            <div class="form__column--right">
+                <p class="form__item">
+                    <label for="lastName">LAST NAME</label>
+                    <input class="form__input" type="text" name="LastName" id="lastName">
+                </p>
+                <p class="form__item">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input class="form__input" type="tel" name="PhoneNumber" id="phone_number">
+                </p>
+                <p class="form__item">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input class="form__input" type="password" name="confirm_password" id="password">
+                </p>
+            </div>
+        </form>
     </section>
-    <section class="sign-up">
-      <h3 class="sign-up__call-to-action">Let the extermination begin!</h3>
-      <form class="form">
-          <div class="form__column--left">
-              <p class="form__item">
-                  <label for="firstName">FIRST NAME</label>
-                  <input class="form__input" type="text" name="FirstName" id="firstName">
-              </p>
-              <p class="form__item">
-                  <label for="email">EMAIL</label>
-                  <input class="form__input" type="email" name="Email" id="email">
-              </p>
-              <p class="form__item">
-                  <label for="password">PASSWORD</label>
-                  <input class="form__input" type="password" name="Password" id="password">
-              </p>
-          </div>
-          <div class="form__column--right">
-              <p class="form__item">
-                  <label for="lastName">LAST NAME</label>
-                  <input class="form__input" type="text" name="LastName" id="lastName">
-              </p>
-              <p class="form__item">
-                  <label for="phone_number">PHONE NUMBER</label>
-                  <input class="form__input" type="tel" name="PhoneNumber" id="phone_number">
-              </p>
-              <p class="form__item">
-                  <label for="confirm_password">CONFIRM PASSWORD</label>
-                  <input class="form__input" type="password" name="confirm_password" id="password">
-              </p>
-          </div>
-      </form>
-  </section>
     <section class="submit">
-      <p>submit</p>
+      <button class="submit__button">Create Account</button>
+      <p class="submit__login">Already have an account ? <a href="">Log In</a></p>
     </section>
+  </div>
+    
 </body>
 </html>

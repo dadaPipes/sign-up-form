@@ -1,5 +1,11 @@
 @import url('https://fonts.cdnfonts.com/css/doctor-who');
 
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,14 +18,17 @@
 }
 
 .academy {
-  float: left;
-  width: 33%;
-  height: 100vh;
+  display: flex;
+  flex-basis: 33.33%;
   contain: content;
 }
 
 .academy__image {
-
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
 }
 
 .academy__field {
@@ -43,35 +52,41 @@
   color: rgb(255, 255, 255);
 }
 
+.right-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 66.66%;
+}
+
 .description {
-  float: right;
-  width: 67%;
-  height: 33vh;
+  flex-basis: 33.33%;
+  padding-top: 15%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
 .description__text {
-  padding-top: 80px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 60px;
+  padding-left: 2%;
+  padding-right: 10%;
 }
 
 .sign-up {
-  float: right;
-  width: 67%;
-  height: 34vh;
-  padding: 20px 50px;
+  flex-basis: 33.33%;
+  padding: 2%;
+
 }
 
 .sign-up__call-to-action {
   font-size: 1.5rem;
-  margin-bottom: 20px;
   font-family: 'Doctor Who', sans-serif;
+  padding-left: 2%;
+  padding-bottom: 20px;
 }
 
 .form {
   display: flex;
-  justify-content: space-around;
+  flex-basis: 33.33%;
 }
 
 .form__column--left {
@@ -87,6 +102,7 @@
 .form__item {
   display: flex;
   flex-direction: column;
+  padding: 2% 5%;
 }
 
 .form__input {
@@ -95,7 +111,18 @@
 }
 
 .submit {
-  float: right;
-  width: 67%;
-  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33.33%;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.submit__button {
+  width: 25%;
+  height: 18%;
+}
+
+.submit__login {
+  padding-top: 5%;
 }
