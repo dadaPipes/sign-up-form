@@ -1,46 +1,101 @@
+@import url('https://fonts.cdnfonts.com/css/doctor-who');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+.description,
+.submit {
+  background-color: rgb(229, 237, 247);
 }
 
-@import url('https://fonts.cdnfonts.com/css/doctor-who');
-
-.left-section {
+.academy {
   float: left;
-  width: 33vw;
+  width: 33%;
   height: 100vh;
   contain: content;
-  position: relative;
 }
 
-.left-section__image {
+.academy__image {
 
 }
 
-.left-section__field {
+.academy__field {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   top: 20%;
-  right: 0;
   width: 100%;
   height: 100px;
   background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity. Workaround so the children does not inherit the opacity*/
 }
 
-.left-section__logo {
-  height: 90px;
+.academy__logo {
+  height: 100px;
   padding: 10px;
   border-radius: 100%;
 }
 
-.left-section_text {
+.academy__text {
   color: rgb(255, 255, 255);
+}
+
+.description {
+  float: right;
+  width: 67%;
+  height: 33vh;
+}
+
+.description__text {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 60px;
+}
+
+.sign-up {
+  float: right;
+  width: 67%;
+  height: 34vh;
+  padding: 20px 50px;
+}
+
+.sign-up__call-to-action {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: 'Doctor Who', sans-serif;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form__column--left {
+  width: 50%;
+  float: left;
+}
+
+.form__column--right {
+  width: 50%;
+  float: right;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  height: 25px;
+  width: 200px;
+}
+
+.submit {
+  float: right;
+  width: 67%;
+  height: 33vh;
 }
