@@ -1,26 +1,22 @@
 @import url('https://fonts.cdnfonts.com/css/doctor-who');
 
-body {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.description,
-.submit {
-  background-color: rgb(229, 237, 247);
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
 }
 
 .academy {
   display: flex;
   flex-basis: 33.33%;
   contain: content;
+    /* border: 0.1rem solid green; */
 }
 
 .academy__image {
@@ -40,6 +36,7 @@ body {
   width: 100%;
   height: 100px;
   background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity. Workaround so the children does not inherit the opacity*/
+    /* border: 0.1rem solid green; */
 }
 
 .academy__logo {
@@ -56,73 +53,108 @@ body {
   display: flex;
   flex-direction: column;
   flex-basis: 66.66%;
+    /* border: 0.1rem solid green; */
+}
+
+.description,
+.submit {
+  background-color: rgb(218, 233, 252);
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   flex-basis: 33.33%;
-  padding-top: 15%;
-  padding-bottom: 2%;
-  padding-right: 2%;
-  padding-left: 2%;
+  padding: 0 2% 2% 2%;
+    /* border: 0.1rem solid green; */
 }
 
 .description__text {
-  padding-left: 2%;
-  padding-right: 10%;
+  max-width: 75ch;
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+
+.description__call-to-action {
+  font-weight: bold;
 }
 
 .sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   flex-basis: 33.33%;
-  padding: 2%;
-
+  padding: 0 2%;
+    /* border: 0.1rem solid green; */
 }
 
 .sign-up__call-to-action {
   font-size: 1.5rem;
   font-family: 'Doctor Who', sans-serif;
-  padding-left: 2%;
-  padding-bottom: 20px;
 }
 
 .form {
   display: flex;
+  justify-content: space-around;
   flex-basis: 33.33%;
+    /* border: 0.1rem solid green; */
 }
 
-.form__column--left {
-  width: 50%;
-  float: left;
+.form__column-1,
+.form__column-2 {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
 }
 
-.form__column--right {
-  width: 50%;
-  float: right;
+.form__column-3 {
+  flex-basis: 33.33%;
 }
 
 .form__item {
   display: flex;
   flex-direction: column;
-  padding: 2% 5%;
+    /* border: 0.1rem solid green; */
+}
+
+.form__label {
+  font-size: 0.8em;
 }
 
 .form__input {
   height: 25px;
   width: 200px;
+  margin-bottom: 2%;
+}
+
+.form__input:focus {
+  border: 3px solid rgb(18, 18, 100);
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .submit {
   display: flex;
   flex-direction: column;
   flex-basis: 33.33%;
-  padding-top: 5%;
-  padding-left: 5%;
+  padding: 2% 2% 0 2%;
+    /* border: 0.1rem solid green; */
 }
 
 .submit__button {
-  width: 25%;
-  height: 18%;
+  width: 15%;
+  height: 20%;
+  border-radius: 10px;
+  background-color: rgb(18, 18, 100);
+  color: whitesmoke;
+}
+
+.submit__button:hover {
+  background-color: rgb(11, 11, 75);
 }
 
 .submit__login {
-  padding-top: 5%;
+  height: 0.5em;
+  padding-top: 2%;
 }
